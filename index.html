@@ -8,9 +8,10 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>콘텐츠탭</title>
+    <!-- 1. 콘텐츠 탭 UI구현 (최근,많이본,실시간인기) -->
     <link
       rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <style>
       .list {
@@ -32,17 +33,17 @@
         </ul>
       </div>
 
-      <div id="list">
-        여기서 각 리스트 뿌려주기 <br /><br />
+      <div">
         <!-- 제목, 링크, 이미지, CP 를 표시해주세요  -->
+        <div id="list"></div>
 
         <!-- 로딩마크업: 로딩중일때만 표시 -->
-        <div class="text-center">
+        <div class="text-center" id="loading" hidden="true">
           <span class="glyphicon glyphicon-refresh"></span> 로딩중
         </div>
       </div>
 
-      <div class="text-center">
+      <div class="text-center" id="more" hidden="true">
         <button type="button" class="btn btn-default">더보기</button>
       </div>
     </div>
